@@ -116,4 +116,34 @@ btn.forEach((element, value) => {
 
 });
 
+function menu() {
 
+    let open = document.querySelector(".menu_open");
+    let menu = document.getElementById("container_menu");
+    open.addEventListener("click", () => {
+        menu.style.display = "flex";
+        menu.style.left = "0px";
+        menu.style.animation = "move ease-in 400ms";
+    });
+
+
+
+    let close = document.querySelector(".close");
+
+    close.addEventListener("click", () => {
+        menu.style.display = "flex";
+        menu.style.left = "-100%";
+        menu.style.animation = "move ease-out 400ms";
+    });
+
+
+
+    let area_menu = document.querySelector(".area_menu nav ul li a");
+
+    area_menu.addEventListener("click", () => {
+        menu.style.left = "-100%";
+        menu.style.animation = "move ease-out 400ms";
+    });
+
+}
+menu();
