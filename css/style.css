@@ -814,7 +814,6 @@ nav ul li a {
         gap: 20px;
     }
 
-
     /*Container gestao*/
     .area_gestao {
         gap: 40px;
@@ -881,6 +880,10 @@ nav ul li a {
     .swiper {
         padding: 0px 0px 10px 0px !important;
         max-width: 240px;
+    }
+
+    .area_solucoes {
+        padding: 0px 20px;
     }
 
     /*Container gestao*/
