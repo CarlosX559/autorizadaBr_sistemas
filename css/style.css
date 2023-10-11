@@ -156,6 +156,7 @@ nav ul li a {
     max-width: max-content;
     background-color: #003F5B;
     filter: drop-shadow(-9px 9px 17px #001C2C);
+    transition: all ease 200ms;
 }
 
 .btn_home h2 {
@@ -163,6 +164,14 @@ nav ul li a {
     font-size: var(--font-sub-title);
     font-weight: var(--font-600);
     line-height: normal;
+}
+
+.btn_home:hover {
+    background-color: #F4F7FF;
+}
+
+.btn_home:hover > h2 {
+    color: #003F5B;
 }
 
 .pdv {
@@ -646,8 +655,39 @@ nav ul li a {
     letter-spacing: 0.8px;
 }
 
+footer {
+    background-image: url(../img/footer.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 560px;
+}
 
+.container_parceiro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
+.area_parceiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.title_parceiro h2 {
+    color: #F4F7FF;
+    font-family: League Spartan;
+    font-size: var(--font-title);
+    font-weight: var(--font-600);
+    line-height: normal;
+}
 
 @media(max-width: 1024px) {
 
@@ -858,6 +898,10 @@ nav ul li a {
         gap: 40px;
     }
 
+    footer {
+        height: 400px;
+    }
+
 }
 
 
@@ -951,4 +995,7 @@ nav ul li a {
         padding: 25px 10px 25px 10px;
     }
 
+    footer {
+        height: 300px;
+    }
 }
