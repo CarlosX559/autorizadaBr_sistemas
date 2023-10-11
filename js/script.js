@@ -38,11 +38,26 @@ let image = document.querySelector(".nfe_info");
 let title = document.querySelector(".title_nfe h2");
 let infos = document.querySelectorAll(".area_infos_nfe ul li");
 
+
+const removeActive = () => {
+    //Transformando o nodelist em array
+    const btnActive = [...document.querySelectorAll(".icones_nfe.active")];
+    //map para percorrer
+    btnActive.map((el) => {
+        el.classList.remove("active");
+    })
+
+}
+
 btn.forEach((element, value) => {
 
     element.addEventListener('click', () => {
+
         switch (value) {
             case 0:
+                removeActive()
+                element.classList.toggle("active");
+                
                 //Imagem principal
                 image.src = nfe1[0];
                 //Titulo principal
@@ -58,6 +73,8 @@ btn.forEach((element, value) => {
                 });
                 break;
             case 1:
+                removeActive()
+                element.classList.toggle("active");
                 //Imagem principal
                 image.src = nfe2[0];
                 //Titulo principal
@@ -75,6 +92,8 @@ btn.forEach((element, value) => {
                 break;
 
             case 2:
+                removeActive()
+                element.classList.toggle("active");
                 //Imagem principal
                 image.src = nfe3[0];
                 //Titulo principal
@@ -93,6 +112,8 @@ btn.forEach((element, value) => {
                 break;
 
             case 3:
+                removeActive()
+                element.classList.toggle("active");
                 //Imagem principal
                 image.src = nfe4[0];
                 //Titulo principal
@@ -111,6 +132,8 @@ btn.forEach((element, value) => {
                 break;
 
         }
+
+
     });
 
 
