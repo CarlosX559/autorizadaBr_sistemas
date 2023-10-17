@@ -856,6 +856,7 @@ footer {
 
     .swiper {
         padding: 20px 0px !important;
+        margin-right: auto !important;
     }
 
     /*Container solucoes*/
