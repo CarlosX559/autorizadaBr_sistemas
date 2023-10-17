@@ -266,6 +266,7 @@ nav ul li a {
     padding: 20px 12px !important;
     z-index: 0 !important;
     max-width: 650px;
+    margin-right: initial !important;
 }
 
 .swiper .swiper-slide {
