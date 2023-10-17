@@ -174,7 +174,7 @@ nav ul li a {
     background-color: #F4F7FF;
 }
 
-.btn_home:hover > h2 {
+.btn_home:hover>h2 {
     color: #003F5B;
 }
 
@@ -242,6 +242,19 @@ nav ul li a {
     border-radius: 30px;
     background: linear-gradient(229deg, #003F5B -52.6%, #2574A0 56.13%);
     box-shadow: -9px 9px 17px -5px #001C2C;
+    transition: all ease-in 200ms;
+}
+
+.area_segmentos:hover {
+    background: #F4F7FF;
+}
+
+.area_segmentos:hover>.area_segmentos_int svg path {
+    fill: #003F5B;
+}
+
+.area_segmentos:hover>.area_segmentos_int .title_segmentos h2 {
+    color: #003F5B;
 }
 
 .area_segmentos_int {
@@ -375,7 +388,7 @@ nav ul li a {
 }
 
 .icones_nfe.active {
-    transform: scale3d(1.1,1.1,1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .icones_nfe img {
