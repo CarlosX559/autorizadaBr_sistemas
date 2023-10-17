@@ -288,6 +288,14 @@ nav ul li a {
     align-items: center;
 }
 
+.swiper-pagination-bullet {
+    background-color: #F4F7FF !important;
+}
+
+.swiper-wrapper {
+    padding: 20px 0px;
+}
+
 /*Container gestão*/
 
 .container_gestao {
