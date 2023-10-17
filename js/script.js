@@ -160,13 +160,13 @@ function menu() {
     });
 
 
+    let area_menu = document.querySelectorAll(".area_menu nav ul li a");
 
-    let area_menu = document.querySelector(".area_menu nav ul li a");
-
-    area_menu.addEventListener("click", () => {
-        menu.style.left = "-100%";
-        menu.style.animation = "move ease-out 400ms";
+    area_menu.forEach( (element) => {
+        element.addEventListener("click", () => {
+            menu.style.left = "-100%";
+            menu.style.animation = "move ease-out 400ms";
+        });
     });
-
 }
 menu();
