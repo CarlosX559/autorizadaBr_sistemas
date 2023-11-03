@@ -479,6 +479,10 @@ nav ul li a {
     transition: all ease 200ms;
 }
 
+.icones_nfe:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
 .icones_nfe.active {
     transform: scale3d(1.1, 1.1, 1.1);
 }
