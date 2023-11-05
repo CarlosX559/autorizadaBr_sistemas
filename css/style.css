@@ -1348,6 +1348,10 @@ footer {
         max-width: 240px;
     }
 
+    .area_texts_solucoes {
+        padding: 0px 20px;
+        width: auto;
+    }
   
     /*Container gestao*/
     .gestoes_int {
