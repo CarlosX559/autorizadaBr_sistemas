@@ -516,6 +516,7 @@ nav ul li a {
 .icones_nfe img {
     max-width: max-content;
     width: 100%;
+    height: auto;
 }
 
 .area_nfe {
@@ -639,6 +640,7 @@ nav ul li a {
 .area_logo_sistema img {
     max-width: max-content;
     width: 100%;
+    height: auto;
 }
 
 .info_sistemas_autorizadaBr {
