@@ -5,7 +5,7 @@
 }
 
 :root {
-    --font-title: 46px;
+    --font-title: 40px;
     --font-sub-title: 20px;
     --font-600: 600;
     --font-400: 400;
@@ -215,7 +215,7 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .area_texts_home {
@@ -223,14 +223,14 @@ nav ul li a {
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    max-width: 438px;
+    max-width: 560px;
 }
 
 .title_home h1 {
     color: #F4F7FF;
     font-size: var(--font-title);
     font-weight: var(--font-600);
-    line-height: normal;
+    line-height: 100%;
 }
 
 .sub_title_home p {
@@ -652,7 +652,7 @@ nav ul li a {
     color: #FDFFF4;
     font-size: 20px;
     font-weight: var(--font-400);
-    line-height: normal;
+    line-height: 110%;
 }
 
 /*Container planos*/
