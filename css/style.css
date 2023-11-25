@@ -30,7 +30,7 @@ a {
     text-decoration: none;
     max-width: max-content;
 }
-
+/*
 [data-animation] {
     opacity: 0;
     transition: all 200ms ease-in;
@@ -69,7 +69,7 @@ a {
     transform: translate3d(0px, 0px, 0px);
 }
 
-
+*/
 header {
     width: 100%;
     position: relative;
@@ -130,7 +130,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F4F7FF;
+    color: #003E59;
     font-size: var(--font-sub-title);
     font-weight: var(--font-600);
     line-height: normal;
@@ -189,7 +189,7 @@ nav ul li a {
 
 /*Container home*/
 #home {
-    background: linear-gradient(28deg, rgba(0, 0, 0, 0.20) 20.65%, rgba(160, 255, 232, 0.20) 40.2%), linear-gradient(209deg, rgba(3, 240, 255, 0.20) 8.19%, rgba(1, 25, 40, 0.20) 42.19%), linear-gradient(207deg, rgba(142, 211, 255, 0.70) -11.03%, rgba(0, 83, 136, 0.70) 58.08%), #2780B9;
+    background: linear-gradient(180deg, rgba(201, 234, 254, 1) -13.82%, rgba(241, 241, 241, 0.00) 90.71%);
     padding: 40px 0px 0px 0px;
     margin-top: -60px;
 }
@@ -227,14 +227,14 @@ nav ul li a {
 }
 
 .title_home h1 {
-    color: #F4F7FF;
+    color: #003E59;
     font-size: var(--font-title);
     font-weight: var(--font-600);
     line-height: 100%;
 }
 
 .sub_title_home p {
-    color: #FDFFF4;
+    color: #003E59;
     font-size: var(--font-sub-title);
     font-weight: var(--font-400);
     line-height: normal;
@@ -249,7 +249,7 @@ nav ul li a {
     width: 100%;
     max-width: max-content;
     background-color: #003F5B;
-    filter: drop-shadow(-9px 9px 17px #001C2C);
+    filter: drop-shadow(-9px 9px 17px rgba(0, 0, 0, 0.06));
     transition: all ease 200ms;
 }
 
@@ -336,14 +336,14 @@ nav ul li a {
 }
 
 .title_solucoes h1 {
-    color: #F4F7FF;
+    color: #003E59;
     font-size: var(--font-title);
     font-weight: var(--font-600);
     line-height: 100%;
 }
 
 .sub_title_solucoes p {
-    color: #FDFFF4;
+    color: #003E59;
     font-size: var(--font-sub-title);
     font-weight: var(--font-400);
     line-height: 100%;
@@ -354,13 +354,13 @@ nav ul li a {
     max-width: 170px;
     height: 188px;
     border-radius: 30px;
-    background: linear-gradient(229deg, #003F5B -52.6%, #2574A0 56.13%);
-    box-shadow: -9px 9px 17px -5px #001C2C;
-    transition: all ease-in 200ms;
+    background: #003F5B;
+    transition: all ease-in 100ms;
 }
 
 .area_segmentos:hover {
     background: #F4F7FF;
+    filter: drop-shadow(-8px 8px 10px rgba(0, 0, 0, 0.2));
 }
 
 .area_segmentos:hover>.area_segmentos_int svg path {
@@ -406,6 +406,10 @@ nav ul li a {
     background-color: #F4F7FF !important;
 }
 
+.swiper-pagination-bullet {
+    background-color: #003F5B !important;
+}
+
 /*Container gestão*/
 
 .container_gestao {
@@ -436,8 +440,8 @@ nav ul li a {
     width: 100%;
     border-radius: 80px;
     background: #F4F7FF;
-    box-shadow: -10px -10px 20px 0px rgba(255, 255, 255, 0.60) inset, 29px -3px 20px -28px rgba(0, 0, 0, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(8px);
+   /* box-shadow: -10px -10px 20px 0px rgba(255, 255, 255, 0.60) inset, 29px -3px 20px -28px rgba(0, 0, 0, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(8px);*/
     padding: 30px 0px;
 }
 
@@ -457,7 +461,6 @@ nav ul li a {
     line-height: normal;
 }
 
-
 .area_texts_gestao {
     width: 100%;
     max-width: 1100px;
@@ -471,7 +474,6 @@ nav ul li a {
     line-height: 100%;
 }
 
-
 .area_nfe_icones {
     display: flex;
     align-items: center;
@@ -480,7 +482,6 @@ nav ul li a {
     gap: 40px;
     width: 100%;
 }
-
 
 .opcoes_nfe {
     display: flex;
@@ -500,7 +501,7 @@ nav ul li a {
     border-radius: 200px;
     fill: rgba(202, 202, 202, 0.50);
     border: 10px solid rgba(202, 202, 202, 0.50);
-    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.06) inset;
     cursor: pointer;
     transition: all ease 200ms;
 }
@@ -570,8 +571,79 @@ nav ul li a {
     line-height: normal;
 }
 
-/*Container sistemas*/
+/*Container servicos*/
 
+.container_servicos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+.container_servicos_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.area_servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.title_servicos h2 {
+    color: #003E59;
+    font-family: League Spartan;
+    font-size: var(--font-title);
+    font-weight: var(--font-600);
+    line-height: normal;
+}
+
+.card_servicos {
+    background: linear-gradient(90deg, #003F5B 22.79%, #186188 117.67%, #2574A0 169.33%);
+    filter: drop-shadow(-9px 9px 17px  rgba(0, 0, 0, 0.06));
+    height: 200px;
+    max-width: 240px;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.card_servicos_int {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    gap: 15px;
+    width: 100%;
+}
+
+
+.title_card_servicos h2 {
+    color: #F4F7FF;
+    font-size: 28px;
+    font-weight: var(--font-600);
+    line-height: 100%;
+}
+
+.sub_title_card_servicos p {
+    color: #FDFFF4;
+    font-size: var(--font-sub-title);
+    font-weight: var(--font-400);
+    line-height: 100%;
+}
+
+/*Container sistemas*/
 
 #bg_color {
     background: linear-gradient(28deg, rgba(0, 0, 0, 0.20) 53.65%, rgba(160, 255, 232, 0.20) 78.2%), linear-gradient(209deg, rgba(3, 240, 255, 0.20) 8.19%, rgba(1, 25, 40, 0.20) 42.19%), linear-gradient(207deg, rgba(142, 211, 255, 0.70) -11.03%, rgba(0, 83, 136, 0.70) 58.08%), #2780B9;
@@ -630,7 +702,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, #003F5B 22.79%, #186188 117.67%, #2574A0 169.33%);
-    filter: drop-shadow(-9px 9px 17px #001C2C);
+    filter: drop-shadow(-9px 9px 17px  rgba(0, 0, 0, 0.06));
     max-width: 320px;
     width: 100%;
     padding: 60px 40px;
@@ -658,7 +730,7 @@ nav ul li a {
 /*Container planos*/
 
 .container_planos {
-    display: none;
+    display: flex;
     justify-content: center;
     width: 100%;
     padding: 40px 0px 40px 0px;
@@ -696,14 +768,14 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background: #2574A0;
-    box-shadow: -28px 7px 35px -8px rgba(0, 0, 0, 0.25), -100px 30px 40px -103px rgba(0, 0, 0, 0.25);
-    height: auto;
+    box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.06);
+    height: calc(100% - 40px);
     border-radius: 56px;
     max-width: 340px;
     width: 100%;
-    padding: 40px 10px 40px 10px;
+    padding: 40px 10px 0px 10px;
     gap: 40px;
 }
 
@@ -731,7 +803,7 @@ nav ul li a {
     font-weight: var(--font-400);
     line-height: 124%;
     letter-spacing: 0.72px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .incluso {
@@ -741,7 +813,6 @@ nav ul li a {
     gap: 40px;
     width: 100%;
     justify-content: flex-start;
-    backdrop-filter: blur(2px);
     border-radius: 30px;
     border-top: 1px solid #FFFFFF;
     padding: 40px 0px 40px 0px;
@@ -753,7 +824,7 @@ nav ul li a {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    max-width: 260px;
+    max-width: 320px;
     gap: 20px;
 }
 
@@ -764,13 +835,13 @@ nav ul li a {
     gap: 10px;
 }
 
-.title_incluso h2 {
+.title_incluso h2, .title_incluso_2 h2, .title_incluso_3 h2 {
     color: #FFF;
     font-size: 18px;
     font-weight: var(--font-400);
     line-height: 124%;
     letter-spacing: 0.72px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .btn_incluso:hover>h2 {
@@ -1317,7 +1388,7 @@ footer {
 
 @media(max-width: 480px) {
     :root {
-        --font-title: 30px;
+        --font-title: 32px;
         --font-sub-title: 18px;
     }
 
@@ -1397,6 +1468,14 @@ footer {
     }
     .area_sistemas {
         gap: 20px;
+    }
+
+    .card_servicos {
+        height: auto;
+    }
+
+    .title_card_servicos h2 {
+        font-size: 22px;
     }
 
     /*Container planos*/
