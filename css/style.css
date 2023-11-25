@@ -608,8 +608,11 @@ nav ul li a {
 }
 
 .card_servicos {
-    background: linear-gradient(90deg, #003F5B 22.79%, #186188 117.67%, #2574A0 169.33%);
-    filter: drop-shadow(-9px 9px 17px  rgba(0, 0, 0, 0.06));
+    /*background: linear-gradient(90deg, #003F5B 22.79%, #186188 117.67%, #2574A0 169.33%);
+    filter: drop-shadow(-9px 9px 17px  rgba(0, 0, 0, 0.06));*/
+    border: 0.661px solid #F4F4F4;
+    background: #FFF;
+    box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
     height: 200px;
     max-width: 240px;
     width: 100%;
@@ -628,16 +631,19 @@ nav ul li a {
     width: 100%;
 }
 
+.card_servicos_int svg {
+    fill: #003E59;
+}
 
 .title_card_servicos h2 {
-    color: #F4F7FF;
+    color: #003E59;
     font-size: 28px;
     font-weight: var(--font-600);
     line-height: 100%;
 }
 
 .sub_title_card_servicos p {
-    color: #FDFFF4;
+    color: #003E59;
     font-size: var(--font-sub-title);
     font-weight: var(--font-400);
     line-height: 100%;
