@@ -74,7 +74,7 @@ a {
 header {
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu_open {
@@ -1300,6 +1300,7 @@ footer {
 
     nav ul li a {
         font-size: 30px;
+        color: #FFFFFF;
     }
 
     .area_menu nav ul a li {
@@ -1323,7 +1324,7 @@ footer {
     .area_home {
         justify-content: center;
         gap: 40px;
-
+        margin-top: 60px;
     }
 
     .area_texts_home {
@@ -1377,13 +1378,25 @@ footer {
     }
 
     .container_gestao {
-        padding: 40px 0px 40px 0px;
+        padding: 0px 0px 40px 0px;
     }
 
     /*Container gestao*/
     .area_gestao {
         gap: 40px;
         padding: 0px 20px;
+    }
+
+    .container_planos {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .area_planos {
+        flex-direction: column;
+    }
+
+    .card_gestao {
+        height: auto;
     }
 
     .title_gestoes h2 {
