@@ -769,7 +769,6 @@
                         </h2>
                     </div>
 
-
                     <div class="area_opcoes_sistemas">
                         <div class="area_logo_sistema" data-animation="left">
                             <img src="img/Logo_Degust_Chef.png" alt="" loading="lazy" width="290" height="49">
@@ -932,8 +931,8 @@
 
                         <div class="incluso">
                             <div class="area_texts_incluso" id="planos_gestao">
-                              
-                              
+
+
                             </div>
 
                             <a class="btn_area_incluso"
@@ -966,8 +965,8 @@
                         </div>
 
                         <div class="incluso">
-                            <div class="area_texts_incluso"  id="planos_gestao_2">
-                            
+                            <div class="area_texts_incluso" id="planos_gestao_2">
+
                             </div>
 
                             <a class="btn_area_incluso"
@@ -1001,7 +1000,7 @@
 
                         <div class="incluso">
                             <div class="area_texts_incluso" id="planos_gestao_3">
-                                
+
                             </div>
                             <a class="btn_area_incluso"
                                 href="https://api.whatsapp.com/send?phone=5541995114006&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20o%20sistema%20Agnus%20Mini%20%2B%20Frente%20de%20Caixa!"
@@ -1471,8 +1470,7 @@
                 <div class="area_footer">
                     <div class="footer_col">
                         <a href="index.html">
-                            <img class="logo_footer" src="img/logo_footer.svg" alt="Gestão Online"
-                                loading="lazy">
+                            <img class="logo_footer" src="img/logo_footer.svg" alt="Gestão Online" loading="lazy">
                         </a>
                         <!--<img class="logo_agnus" src="img/logoAgnus.webp" alt="Agnus" loading="lazy">-->
                     </div>
@@ -1606,44 +1604,44 @@
     <script defer src="js/script.js"></script>
     <script defer>
 
-
         let planosgestao = document.getElementById("planos_gestao");
         let planosgestao2 = document.getElementById("planos_gestao_2");
         let planosgestao3 = document.getElementById("planos_gestao_3");
         let nome = document.querySelectorAll(".title_card h2");
         let incluso3 = document.querySelectorAll(".title_incluso_3 h2");
 
-        fetch("js/plans.json").then((response) => {
+        let apiUrl = `https://api.autorizadabr.com.br/api/list/plans`;
+
+        fetch(apiUrl).then((response) => {
 
             response.json().then((planos) => {
-                
+
                 planos.data.map((dados) => {
-                  
+                   
                     switch (dados.id) {
                         case 1:
-                       
                             nome[0].innerHTML += dados.name;
-
-                            for (let i = 0; i < 9; i++) {
+                           
+                            for (let i = 0; i < dados.plan_modules.length; i++) {
                                 //incluso[i].innerHTML += dados.plan_modules[i].name;
-                              
-                                if( dados.plan_modules[i].price == null ) {
+
+                                if (dados.plan_modules[i].price == null) {
                                     planosgestao.innerHTML += `<div class="incluso_int"><img src="img/nocheck.svg" alt=""><div class="title_incluso"><h2>${dados.plan_modules[i].name}</h2></div></div>`;
-                                }else {
+                                } else {
                                     planosgestao.innerHTML += `<div class="incluso_int"><img src="img/check.svg" alt=""><div class="title_incluso"><h2>${dados.plan_modules[i].name}</h2></div></div>`;
                                 }
                             }
-                           
+
                             break;
 
                         case 2:
                             nome[1].innerHTML += dados.name;
-                            for (let i = 0; i < 22; i++) {
+                            for (let i = 0; i < dados.plan_modules.length; i++) {
                                 //incluso2[i].innerHTML += dados.plan_modules[i].name;
 
-                                if( dados.plan_modules[i].price == null ) {
+                                if (dados.plan_modules[i].price == null) {
                                     planosgestao2.innerHTML += `<div class="incluso_int"><img src="img/nocheck.svg" alt=""><div class="title_incluso_2"><h2>${dados.plan_modules[i].name}</h2></div></div>`;
-                                }else {
+                                } else {
                                     planosgestao2.innerHTML += `<div class="incluso_int"><img src="img/check.svg" alt=""><div class="title_incluso_2"><h2>${dados.plan_modules[i].name}</h2></div></div>`;
                                 }
                             }
@@ -1651,11 +1649,11 @@
 
                         case 3:
                             nome[2].innerHTML += dados.name;
-                            for (let i = 0; i < 23; i++) {
+                            for (let i = 0; i < dados.plan_modules.length; i++) {
                                 //incluso3[i].innerHTML += dados.plan_modules[i].name;
-                                if( dados.plan_modules[i].price == null ) {
+                                if (dados.plan_modules[i].price == null) {
                                     planosgestao3.innerHTML += `<div class="incluso_int"><img src="img/nocheck.svg" alt=""><div class="title_incluso_3"><h2>${dados.plan_modules[i].name}</h2></div></div>`;
-                                }else {
+                                } else {
                                     planosgestao3.innerHTML += `<div class="incluso_int"><img src="img/check.svg" alt=""><div class="title_incluso_3"><h2>${dados.plan_modules[i].name}</h2></div></div>`;
                                 }
                             }
@@ -1667,7 +1665,6 @@
             });
 
         });
-
 
         const swiper = new Swiper('.slide_1.swiper', {
             // Optional parameters
