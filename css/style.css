@@ -216,7 +216,7 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .area_texts_home {
@@ -250,7 +250,7 @@ nav ul li a {
     width: 100%;
     max-width: max-content;
     background-color: #003F5B;
-    filter: drop-shadow(-9px 9px 17px rgba(0, 0, 0, 0.06));
+    box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.2);
     transition: all ease 200ms;
 }
 
@@ -759,7 +759,18 @@ nav ul li a {
     max-width: max-content;
     width: 100%;
     padding: 40px 20px;
-    border-radius: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.area_logo_sistema.active {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.area_logo_sistema:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .area_logo_sistema img {
@@ -1324,7 +1335,7 @@ footer {
     .area_home {
         justify-content: center;
         gap: 40px;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .area_texts_home {
@@ -1497,6 +1508,10 @@ footer {
         width: auto;
     }
 
+    .container_servicos {
+        padding: 0px 0px 40px 0px;
+    }
+
     /*Container gestao*/
     .gestoes_int {
         padding: 0px 20px;
@@ -1541,7 +1556,18 @@ footer {
     }
 
     .area_sistemas {
+        gap: 40px;
+    }
+
+    .area_opcoes_sistemas {
         gap: 20px;
+    }
+
+    .area_logo_sistema {
+        max-width: 120px;
+        width: 100%;
+        padding: 20px 20px;
+        border-radius: 20px;
     }
 
     .card_servicos {
