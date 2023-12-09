@@ -96,7 +96,6 @@ input {
     letter-spacing: 0.18px;
 }
 
-
 /*
 [data-animation] {
     opacity: 0;
@@ -135,8 +134,8 @@ input {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
-
 */
+
 header {
     width: 100%;
     position: relative;
@@ -1601,6 +1600,9 @@ footer {
     }
     .area_servicos {
         gap: 20px;
+    }
+    .card_servicos {
+        margin: 0px 20px;
     }
 
     /*Container gestao*/
