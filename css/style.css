@@ -872,6 +872,12 @@ nav ul li a {
     height: auto;
 }
 
+.size_logo_sistemas.gestao {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}   
+
 .logo_padrao_sistemas {
     width: 100%;
     max-width: 40px;
