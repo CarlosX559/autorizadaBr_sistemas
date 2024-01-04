@@ -96,7 +96,7 @@ input {
     letter-spacing: 0.18px;
 }
 
-/*
+
 [data-animation] {
     opacity: 0;
     transition: all 200ms ease-in;
@@ -134,7 +134,7 @@ input {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
-*/
+
 
 header {
     width: 100%;

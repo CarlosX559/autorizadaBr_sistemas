@@ -207,6 +207,7 @@ function sistemas() {
     let btn_sistemas = document.querySelectorAll(".area_logo_sistema");
     let title_sistemas = document.querySelector('.title_sistemas_autorizadaBr h2');
     let sub_title_sistemas = document.querySelector('.info_sistemas_autorizadaBr p');
+    let imgs_sistemas = document.querySelector('.imgs_sistemas');
 
     btn_sistemas.forEach((element, id) => {
         element.addEventListener('click', () => {
@@ -215,7 +216,7 @@ function sistemas() {
                 case 0:
                     removeActive_sistemas()
                     element.classList.toggle("active");
-
+                    imgs_sistemas.src = 'img/degust_chef_sistemas.webp';
                     title_sistemas.innerHTML = "Degust chef";
                     sub_title_sistemas.innerHTML = "Com o Degust chef, você moderniza a gestão e o atendimento, com muito mais mobilidade e agilidade, focando na satisfação do cliente e no crescimento de seu negócio. Sistema voltado para bares e restaurantes, em que a comanda é emitida direto para a cozinha, além do fechamento por mesa, oferecendo diversas opções de pagamentos como crédito, débito, dinheiro ou Pix."
                     break;
@@ -223,7 +224,7 @@ function sistemas() {
                 case 1:
                     removeActive_sistemas()
                     element.classList.toggle("active");
-
+                    imgs_sistemas.src = 'img/mobile_pay_sistemas.webp';
                     title_sistemas.innerHTML = "Mobile pay";
                     sub_title_sistemas.innerHTML = "Uma nova forma de vender em seu estabelecimento!<br><br>Com o mobile instalado em sua máquina de cartão, você ganha um PDV móvel completo para usar em toda a loja, totalmente integrado ao seu sistema e ERP, reunindo tudo o que você precisa para agilizar o atendimento ao cliente com total segurança e tranquilidade."
                     break;
@@ -231,21 +232,21 @@ function sistemas() {
                 case 2:
                     removeActive_sistemas()
                     element.classList.toggle("active");
-
+                    imgs_sistemas.src = 'img/gestao_sistemas.webp';
                     title_sistemas.innerHTML = "Gestão";
                     sub_title_sistemas.innerHTML = "Com o sistema instalado em seu equipamento local, facilite a gestão de sua loja e tenha total controle de suas vendas, estoque e financeiro integrados, além do controle de documentos fiscais."
                     break;
                 case 3:
                     removeActive_sistemas()
                     element.classList.toggle("active");
-
+                    imgs_sistemas.src = 'img/gestao_online_sisistemas.webp';
                     title_sistemas.innerHTML = "Gestão online";
                     sub_title_sistemas.innerHTML = "Tenha total controle de suas vendas, estoque e financeiro de forma totalmente online, podendo acessar em qualquer dispositivo e em qualquer lugar, acompanhando seus lucros com maior facilidade e ganhando tempo para focar no crescimento do seu negócio."
                     break;
                 case 4:
                     removeActive_sistemas()
                     element.classList.toggle("active");
-
+                    imgs_sistemas.src = 'img/venda_rapida_sistemas.webp';
                     title_sistemas.innerHTML = "Venda rápida";
                     sub_title_sistemas.innerHTML = "Tenha o controle básico e rápido e emita seu cupom e nota fiscal, e o melhor, tudo 100% online."
                     break;
