@@ -731,6 +731,10 @@ nav ul li a {
     padding: 0px 0px 60px 0px;
 }
 
+.imgs_sistemas {
+    border-radius: 20px;
+}
+
 .container_sistemas_int {
     display: flex;
     justify-content: center;
@@ -822,6 +826,8 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
     filter: drop-shadow(-9px 9px 17px rgba(7, 114, 148, 0.02));
     max-width: max-content;
     width: 100%;
@@ -860,11 +866,18 @@ nav ul li a {
     transform: scale3d(1.1, 1.1, 1.1);
 }
 
-.area_logo_sistema img {
+.size_logo_sistemas {
     max-width: 140px;
     width: 100%;
     height: auto;
 }
+
+.logo_padrao_sistemas {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+}
+
 
 .info_sistemas_autorizadaBr {
     max-width: 700px;
