@@ -432,6 +432,7 @@ nav ul li a {
 .area_segmentos .area_segmentos_int svg path {
     fill: #4885ED;
 }
+
 /*
 .area_segmentos:hover>.area_segmentos_int svg path {
     fill: #4885ED;
@@ -733,6 +734,9 @@ nav ul li a {
 
 .imgs_sistemas {
     border-radius: 20px;
+    max-width: max-content;
+    width: 100%;
+    height: auto;
 }
 
 .container_sistemas_int {
@@ -876,7 +880,7 @@ nav ul li a {
     max-width: 120px;
     width: 100%;
     height: auto;
-}   
+}
 
 .logo_padrao_sistemas {
     width: 100%;
@@ -890,6 +894,137 @@ nav ul li a {
     width: 100%;
 }
 
+/*Video*/
+.container_video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 60px 0px;
+}
+
+.container_video_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 660px;
+}
+
+.area_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+
+}
+
+.title_video h2 {
+    color: #2C2C2C;
+    font-family: League Spartan;
+    font-size: var(--font-title);
+    font-weight: var(--font-600);
+    line-height: normal;
+    text-align: center;
+}
+
+.area_player {
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.thumb_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.thumb_2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.hidden_controls {
+    display: flex;
+    width: 100% !important;
+    height: 18% !important;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    backdrop-filter: blur(10px) contrast(100%);
+    -webkit-backdrop-filter: blur(10px) contrast(100%);
+}
+
+.up_container {
+    position: relative;
+    padding-bottom: 54%;
+    max-height: 90vh;
+}
+
+.up_container .player-wrapper {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.up_container .player-wrapper video,
+.up_container .player-wrapper iframe,
+.up_container .player-wrapper>div {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.up_container.glass {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-position: center;
+}
 
 
 /*Container planos*/
@@ -1617,9 +1752,11 @@ footer {
     .container_servicos {
         padding: 40px 0px 40px 0px;
     }
+
     .area_servicos {
         gap: 20px;
     }
+
     .card_servicos {
         margin: 0px 20px;
     }
@@ -1684,6 +1821,19 @@ footer {
 
     .title_card_servicos h2 {
         font-size: 22px;
+    }
+
+    .area_video {
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .title_video h2 {
+        padding: 0px 20px;
+    }
+
+    .hidden_controls {
+        height: 30% !important;
     }
 
     /*Container planos*/

@@ -720,6 +720,86 @@
         </div>
     </div>
 
+
+    <div class="container_video">
+        <div class="container_video_int">
+
+            <div class="area_video">
+                <div class="title_video">
+                    <h2>Sistema gestão, iniciando uma venda</h2>
+                </div>
+                <div class="area_player">
+                    <div class="up_container">
+                        <div class="player-wrapper">
+                            <video class="player" width="100%" height="auto" autoplay="false" preload="metadata"
+                                controls loop muted playsinline>
+                                <source src="video/gestao.mp4" type="video/mp4">
+                                </source>
+
+                            </video>
+
+
+                            <script>
+
+                                var player = document.querySelector('.player');
+                                player.pause();
+                                function playClick() {
+
+                                    player.volume = 1;
+                                    player.muted = false;
+                                    player.currentTime = 0;
+                                    player.controls = false;
+                                    player.play();
+                                    document.querySelector(".thumb_1").style.display = "none";
+                                    document.querySelector(".hidden_controls").style.display = "none";
+
+                                }
+
+
+                                function pauseClick() {
+                                    player.pause();
+                                    document.querySelector(".thumb_2").style.display = "flex";
+                                }
+
+                                function returnVideo() {
+                                    player.play();
+                                    document.querySelector(".thumb_2").style.display = "none";
+                                }
+
+                            </script>
+
+
+                            <div class="thumb_1" onclick="playClick()">
+                              
+                            </div>
+
+                            <div class="thumb_2" onclick="returnVideo()">
+
+                            </div>
+
+                            <div class="hidden_controls"></div>
+
+                            <div class="glass" onclick="pauseClick()"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.youtube.com/@sistemadegestaocompleto360/videos" target="_blank">
+                    <div class="btn_home">
+                        <h2>Assista mais aqui!</h2>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
     <div class="container_gestao">
         <div class="container_gestao_int">
             <div class="area_gestao">
