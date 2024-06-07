@@ -204,7 +204,7 @@ nav ul li a {
 
 .logo_desktop {
     width: 100%;
-    max-width: max-content;
+    max-width: 200px;
     height: auto;
 }
 
