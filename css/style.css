@@ -337,7 +337,7 @@ nav ul li a {
 .pdv {
     border-radius: 6px;
     /*box-shadow: 7px 24px 35px 0px rgba(0, 83, 136, 0.81);*/
-    max-width: max-content;
+    max-width: 600px;
     width: 100%;
     height: auto;
 }
