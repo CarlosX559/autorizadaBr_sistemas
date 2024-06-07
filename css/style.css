@@ -255,7 +255,7 @@ nav ul li a {
 
 /*Container home*/
 #home {
-    background: #4885ED;
+    background: #007E7D;
     padding: 40px 0px 0px 0px;
     margin-top: -60px;
 }
@@ -320,14 +320,14 @@ nav ul li a {
 }
 
 .btn_home h2 {
-    color: #195AFE;
+    color: #007E7D;
     font-size: var(--font-sub-title);
     font-weight: var(--font-600);
     line-height: normal;
 }
 
 .btn_home:hover {
-    background-color: #4885ED;
+    background-color: #007E7D;
 }
 
 .btn_home:hover>h2 {
@@ -430,7 +430,7 @@ nav ul li a {
 }
 
 .area_segmentos .area_segmentos_int svg path {
-    fill: #4885ED;
+    fill: #007E7D;
 }
 
 /*
@@ -452,7 +452,7 @@ nav ul li a {
 }
 
 .title_segmentos h2 {
-    color: #4885ED;
+    color: #007E7D;
     font-size: 24px;
     font-weight: var(--font-600);
     line-height: normal;
@@ -855,7 +855,7 @@ nav ul li a {
 }
 
 .gestao_online {
-    background-color: #4885ED;
+    background-color: #007E7D;
 }
 
 .venda_rapida {
@@ -1074,7 +1074,7 @@ video {
     align-items: center;
     justify-content: flex-start;
     border-radius: 56px;
-    background: #4885ED;
+    background: #007E7D;
     box-shadow: -28px 7px 35px -8px rgba(0, 0, 0, 0.25), -100px 30px 40px -103px rgba(0, 0, 0, 0.25);
     height: calc(100% - 40px);
     max-width: 340px;
@@ -1226,15 +1226,15 @@ video {
 }
 
 #svg-map path {
-    fill: #4885ED;
+    fill: #007E7D;
 }
 
 #svg-map path:hover {
-    fill: #4885ED;
+    fill: #007E7D;
 }
 
 #svg-map .circle {
-    fill: #4885ED;
+    fill: #007E7D;
 }
 
 #svg-map text {
@@ -1281,7 +1281,7 @@ video {
 /*Footer*/
 footer {
     width: 100%;
-    background: #4885ED;
+    background: #007E7D;
     box-shadow: 0px -25px 42px 0px rgba(0, 0, 0, 0.20) inset;
     padding: 80px 0px 80px 0px;
 }
@@ -1408,7 +1408,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: #4885ED;
+    background: #007E7D;
     padding: 20px 0px;
 }
 
@@ -1483,7 +1483,7 @@ footer {
         width: 100%;
         height: 100vh;
         opacity: 0.9;
-        background: #4885ED;
+        background: #007E7D;
         position: fixed;
         top: 0px;
         z-index: 99;
